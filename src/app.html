@@ -3,7 +3,30 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+
+		<!-- Preconnect to Google Fonts domain -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<!-- Preload the 2 font CSS files -->
+		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+		/>
+		<link
+			rel="preload"
+			as="style"
+			href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+		/>
+
+		<!-- Load the full Google Fonts CSS -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Potta+One&display=swap"
+			rel="stylesheet"
+		/>
+
 		<meta name="viewport" content="width=device-width" />
+
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
