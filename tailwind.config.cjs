@@ -10,7 +10,8 @@ module.exports = {
 			}
 		},
 		fontFamily: {
-			body: ['Luckiest Guy', 'Potta One']
+			body: ['Luckiest Guy'],
+			potta: ['Potta One']
 		}
 	},
 	plugins: []
