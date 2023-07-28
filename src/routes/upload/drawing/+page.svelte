@@ -22,7 +22,7 @@
 <section class="flex flex-col items-center">
 	<h1 class="mt-8 text-6xl font-normal">First, upload your drawing!</h1>
 	<div class="container bg-orange-100">
-		<Dropzone accept="img/jpeg" inputElement="hello" on:drop={handleFilesSelect} />
+		<Dropzone accept="image/jpeg, image/png" inputElement="hello" on:drop={handleFilesSelect} />
 		<button>Upload Drawing</button>
 		<button>Take a Picture</button>
 	</div>
