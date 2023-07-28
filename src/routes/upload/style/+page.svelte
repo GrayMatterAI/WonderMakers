@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { goto } from '$app/navigation';
 
 	function navigateToUploadDrawing() {
@@ -6,14 +6,11 @@
 	}
 </script>
 
-<div class="mx-auto grid p-4">
-	<h1 class="mb-4 text-center text-4xl md:text-5xl lg:text-6xl">
-		Welcome to your creative studio Wondermaker!
-	</h1>
-	<img src="/image13.svg" alt="img" class="mx-auto" />
+<section class="uploadDrawing">
+	<h1>Now, pick your style!</h1>
 	<button
 		on:click={navigateToUploadDrawing}
 		class="mx-auto my-6 w-96 transform rounded-3xl border-4 border-black bg-black bg-gradient-to-r px-2 py-4 font-potta text-3xl font-bold tracking-widest text-white transition-colors duration-100 ease-in-out hover:border-4 hover:border-black hover:bg-transparent hover:text-black"
-		>Get Started!</button
+		>Back</button
 	>
-</div>
+</section>
