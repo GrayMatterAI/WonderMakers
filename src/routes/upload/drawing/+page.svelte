@@ -3,7 +3,6 @@
 	import Dropzone from 'svelte-file-dropzone/Dropzone.svelte';
 	import type { FilesInput } from '../../../types/files.type';
 
-
 	let files: FilesInput = {
 		accepted: [],
 		rejected: []
