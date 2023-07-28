@@ -1,30 +1,24 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import Dropzone from 'svelte-file-dropzone/Dropzone.svelte';
-	import type { FilesInput } from '../../../types/files.type';
-
-	let files: FilesInput = {
-		accepted: [],
-		rejected: []
-	};
-
-	function handleFilesSelect(e: any) {
-		const { acceptedFiles, fileRejections } = e.detail;
-		files.accepted = [...files.accepted, ...acceptedFiles];
-		files.rejected = [...files.rejected, ...fileRejections];
-	}
+	import Dropzone from '$lib/Dropzone/Dropzone.svelte';
 
 	function navigateToUploadStyle() {
 		goto('/upload/style');
 	}
 </script>
 
-<section class="flex flex-col items-center">
-	<h1 class="mt-8 text-6xl font-normal">First, upload your drawing!</h1>
-	<div class="container bg-orange-100">
-		<Dropzone accept="image/jpeg, image/png" inputElement="hello" on:drop={handleFilesSelect} />
-		<button>Upload Drawing</button>
-		<button>Take a Picture</button>
+<section class="container mx-auto flex flex-col items-center rounded-3xl bg-orange-200">
+	<h1 class="mt-14 text-6xl font-normal">First, upload your drawing!</h1>
+	<div class="container mt-8 grid rounded-lg p-6">
+		<Dropzone />
+		<button
+			class="mx-auto mt-4 w-64 rounded-md bg-black px-6 py-2 text-white transition-colors duration-100 ease-in-out hover:border-4 hover:border-black hover:bg-transparent hover:text-black"
+			>Upload Drawing</button
+		>
+		<button
+			class="mx-auto mt-4 w-64 rounded-md bg-black px-6 py-2 text-white transition-colors duration-100 ease-in-out hover:border-4 hover:border-black hover:bg-transparent hover:text-black"
+			>Take a Picture</button
+		>
 	</div>
 	<button
 		on:click={navigateToUploadStyle}
