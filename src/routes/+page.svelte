@@ -1,5 +1,6 @@
 <script>
 	import { goto } from '$app/navigation';
+	import Button from '$lib/Button/Button.svelte';
 
 	function navigateToUploadDrawing() {
 		goto('/upload/drawing');
@@ -11,9 +12,5 @@
 		Welcome to your creative studio Wondermaker!
 	</h1>
 	<img src="/image13.svg" alt="img" class="mx-auto" />
-	<button
-		on:click={navigateToUploadDrawing}
-		class="mx-auto my-6 w-96 transform rounded-3xl border-4 border-black bg-black bg-gradient-to-r px-2 py-4 font-potta text-3xl font-bold tracking-widest text-white transition-colors duration-100 ease-in-out hover:border-4 hover:border-black hover:bg-transparent hover:text-black"
-		>Get Started!</button
-	>
+	<Button buttonFunction={navigateToUploadDrawing} text="Get Started!" title="Get Started!" />
 </div>

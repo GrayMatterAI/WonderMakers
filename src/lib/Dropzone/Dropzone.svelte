@@ -6,7 +6,7 @@
 	}
 
 	function handleDragLeave() {
-		dragging = false;
+		dragging = false;	
 	}
 
 	function handleDrop(event: any) {
@@ -27,5 +27,7 @@
 	on:dragleave={handleDragLeave}
 	on:drop|preventDefault={handleDrop}
 >
-	Drag 'n' drop some files here, or click to select files
+	<slot>
+
+	</slot>
 </div>
