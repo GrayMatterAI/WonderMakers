@@ -12,5 +12,7 @@
 		Welcome to your creative studio Wondermaker!
 	</h1>
 	<img src="/image13.svg" alt="img" class="mx-auto" />
-	<Button buttonFunction={navigateToUploadDrawing} text="Get Started!" title="Get Started!" />
+	<div class="flex justify-center">
+		<Button buttonFunction={navigateToUploadDrawing} text="Get Started!" title="Get Started!" />
+	</div>
 </div>

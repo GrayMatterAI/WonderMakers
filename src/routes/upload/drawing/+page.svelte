@@ -28,7 +28,6 @@
 	<h1 class="mt-14 text-6xl font-normal">First, upload your drawing!</h1>
 	<div class="container mt-8 grid rounded-lg p-6">
 		<Dropzone on:drop={handleFilesSelect}>
-			<p>Hola</p>
 			<button
 				class="mx-auto mt-4 w-64 rounded-xl border-4 border-black bg-black px-6 py-2 text-xl tracking-wider text-white transition-colors duration-100 ease-in-out hover:bg-transparent hover:text-black"
 			>
