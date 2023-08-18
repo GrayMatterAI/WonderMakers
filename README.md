@@ -19,30 +19,29 @@ To get a local copy up and running follow these simple steps.
 This is an example of how to list things you need to use the software and how to install them.
 
 - npm
-  sh npm install npm@latest -g
+  <br>`sh npm install npm@latest -g`
 
 ### Installation
 
 1. Clone the repo
-   sh git clone https://github.com/GrayMatterAI/WonderMakers
+   <br>`sh git clone https://github.com/GrayMatterAI/WonderMakers`
 
 2. Install NPM packages
-   sh npm install
+   <br>`sh npm install`
 
 ## Usage
 
 Once you've created a project and installed dependencies with `npm install`, start a development server:
 
-bash npm run dev
+`bash npm run dev`
 
 or start the server and open the app in a new browser tab
-npm run dev -- --open
+<br>`npm run dev -- --open`
 
 ## 🏗️ Building
 
 To create a production version of your app:
-
-bash npm run build
+<br>`bash npm run build`
 
 You can preview the production build with `npm run preview`.
 
